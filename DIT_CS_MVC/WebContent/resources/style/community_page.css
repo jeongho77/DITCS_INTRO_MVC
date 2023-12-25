@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'neon';
+    src: url('../font/JalnanOTF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'EASTARJET-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+	font-family: 'neon', Arial, sans-serif !important;
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0; !important;
+    padding: 0; !important;
+}
+
+
+
+ /* Header 스타일 */
+#login-success {
+    display: flex;
+    align-items: center;
+    margin:0px;
+}
+
+#login-success p {
+	margin: 0px !important;
+    font-family: 'neon', sans-serif;
+    padding: 10px 0px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+header {
+    background-color: #fff !important;
+    border-bottom: 3px solid #424874 !important;
+    color: #000 !important;
+    padding: 8px !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    z-index: 1000;
+}
+
+header img {
+    width: 300px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+nav {
+    margin-left: 30px; !important;
+    cursor: pointer; !important;
+}
+
+nav span {
+    margin-right: 5px;
+}
+
+#login button {
+    margin: 15px; !important;
+}
+
+.w-btn, 
+.w-btn1 {
+    
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "EASTRAJET-Medium", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.25s;
+}
+
+.w-btn1{
+    color: black;
+    background-color: #DCD6F7;
+}
+
+.w-btn-indigo {
+    
+    background-color: rgba(255, 255, 255, .15);
+    border: 1px solid #337ab7;
+
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    padding-top : 80px;
+}
+
+#main-title
+,#main-content
+{
+	border: solid 3px skyblue;
+	padding : 10px;
+	border-radius : 15px;
+}
+
+#main-content {
+    flex-grow: 1; /* Allow #main-content to grow and take available space */
+    padding-top: 25px;
+}
+
+.main-list {
+    margin: 20px;
+    margin-bottom: 30px; 
+    width:52%;
+}
+
+#main-like{
+	margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+#main-like .w-btn{
+	
+	
+    background-color: white;
+    border: skyblue 1px solid;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+#main-like img{
+	
+	height: 50px;
+    border: black;
+    padding : 10px;
+}
+
+.main {
+    border-radius: 10px;
+    border: 4px solid #A6B1E1;
+    padding: 40px;
+    height: auto;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+span {
+	
+}
+.main-info {
+    display: flex;
+    align-items: center;
+    padding : 10px;
+}
+
+.main-info p {
+   margin: 0 0 0px;
+}
+
+.author {
+    margin-right: 10px;
+}
+
+.main-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.main-info small {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+
+.date {
+    right: 0;
+    margin-left: 20px;
+}
+
+#hr {
+    border: 2px solid skyblue !important;
+    
+}
+
+footer {
+    background-color: aqua;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modify-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding :20px;
+}
+
+.comments {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.comment-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comment-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #52d254;
+    border-radius: 5px;
+    
+    margin-right: 10px;
+}
+
+.comment-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;
+    color: #000;
+    cursor: pointer;
+}
+
+#comment-list {
+    list-style-type: none;
+    padding: 40px;
+    border: 0.5px solid #ffef9c
+    
+}
+
+.comment-item{
+	border: 1px solid #E2E2E2
+	
+}
+
+.comment-list li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.comment-writer {
+	font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.comment-content {
+    font-size: 20px;
+    line-height: 1.5;
+    
+    font-family: sans-serif;
+    padding : 10px 10px 20px 20px;
+}
+
+#delete {
+	
+	border: none;
+	    padding: 0;
+    margin: 0;
+}
+#update{
+	border: none;
+	    padding: 0;
+    margin: 0;
+}
+
+#delete .image-icon {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background: url(/resources/image/x.png) no-repeat center center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.image-icon2 {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background: url(/resources/image/modify.png) no-repeat center center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.edit-form{
+	margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+ #main-file {
+   
+    padding: 10px;
+    padding-top: 25px;
+}
+
+#search_form {
+    width: 400px; /* 원하는 너비로 조절 */
+    margin: 20px auto; /* 가운데 정렬을 위한 마진 설정 */
+}
+
+#search_form input[type="text"] {
+    width: 80%; /* 입력창의 너비를 폼의 80%로 설정 */
+    padding: 10px; /* 내부 여백 설정 */
+}
+
+#search_form button {
+    width: 18%; /* 버튼의 너비를 폼의 18%로 설정 */
+    padding: 10px; /* 내부 여백 설정 */
+}
+
+.sideBanner {
+            position: absolute;
+            width: 340px;
+            height: 380px;
+            top: 100px;
+            background-color: #999900;
+            color: #fffffff;
+            margin: 15px;
+            margin-top:80px;
+        }
+
+        .sideBanner img {
+            position: relative;
+            width: 100%; /* 이미지를 부모 요소에 맞게 확대/축소 */
+            height: 100%; /* 이미지를 부모 요소에 맞게 확대/축소 */
+        }
+
+        .sideBanner2 {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 340px;
+            height: 380px;
+            background-color: #999900;
+            color: #fffffff;
+            margin: 15px;
+            margin-top:80px;
+        }
+
+        .sideBanner2 img {
+            position: relative;
+            width: 100%; /* 이미지를 부모 요소에 맞게 확대/축소 */
+            height: 100%; /* 이미지를 부모 요소에 맞게 확대/축소 */
+        }

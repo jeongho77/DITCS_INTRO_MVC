@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cs.dit.mapper.BoardMapper">
+	<select id="getList" resultType="cs.dit.domain.BoardVO">
+		select * from tbl_board order by bno desc
+	</select>
+	
+	<select id="getListPage" resultType="cs.dit.domain.BoardVO">
+		select * from tbl_board order by bno desc limit #{pageStart}, #{amount}
+	</select>
+	
+	<select id="getTotal" resultType="int">
+		select count(bno) from tbl_board 
+	</select>
+
+	<insert id="insert" parameterType="cs.dit.domain.BoardVO"
+		useGeneratedKeys="true" keyProperty="bno">
+		insert into tbl_board (title, content, writer, filename) 
+		values (#{title}, #{content}, #{writer}, #{filename})
+	</insert>
+
+	<select id="read" resultType="cs.dit.domain.BoardVO">
+		select * from tbl_board where bno = #{bno}
+	</select>
+
+	<update id="update" parameterType="cs.dit.domain.BoardVO">
+		update tbl_board set title = #{title},
+		content = #{content}, writer = #{writer},
+		updateDate = now(), filename = #{filename}
+		where bno = #{bno}
+	</update>
+
+	<select id="get" resultType="cs.dit.domain.BoardVO">
+		select * from tbl_board where bno = #{bno}
+	</select>
+
+	
+
+
+	<delete id="remove" parameterType="java.lang.Long">
+		delete from tbl_board where bno = #{bno}
+	</delete>
+	
+	<update id="view_cnt" parameterType="java.lang.Long">
+    	UPDATE tbl_board SET view_cnt = view_cnt + 1 WHERE bno = #{bno}
+	</update>
+	
+	<select id="like_cnt" parameterType="java.lang.Long"  resultType="int">
+		SELECT  COUNT(l.number) AS like_count
+		FROM tbl_board b		
+		LEFT JOIN tbl_board_like l ON b.bno = l.bno
+		WHERE b.bno = #{bno}
+		GROUP BY b.bno, b.title, b.content, b.view_cnt
+	</select>
+	
+	<select id="reply_cnt" parameterType="java.lang.Long"  resultType="int">
+		SELECT COUNT(number) AS reply_count
+	    FROM tbl_board_reply
+	    WHERE board_num = #{bno}
+	</select>
+	
+	<select id="search" parameterType="java.lang.String" resultType="cs.dit.domain.BoardVO">
+    	SELECT * FROM tbl_board WHERE title LIKE CONCAT('%', #{title}, '%') ORDER BY BNO ASC
+	</select>
+
+	
+</mapper>

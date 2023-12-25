@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cs.dit.mapper.PhotoMapper">  
+   
+   <insert id="insert" parameterType="cs.dit.domain.PhotoVO" useGeneratedKeys="true" keyProperty="pno">
+    insert into pho_board (title, writer, filename) values (#{title}, #{writer}, #{filename})
+	</insert>
+     
+    <delete id="remove" parameterType="int">
+        delete from pho_board where pno = #{pno}
+    </delete>
+    
+    <select id="get" parameterType="cs.dit.domain.PhotoVO" resultType="cs.dit.domain.PhotoVO">
+        select * from pho_board where pno = #{pno}
+    </select>
+    
+    <select id="getList" resultType="cs.dit.domain.PhotoVO">
+		select * from pho_board order by pno desc
+	</select>
+</mapper>

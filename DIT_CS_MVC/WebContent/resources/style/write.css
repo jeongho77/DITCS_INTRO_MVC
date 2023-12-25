@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'neon';
+    src: url('../font/JalnanOTF.otf') format('opentype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ /* Header 스타일 */
+#login-success {
+    display: flex;
+    align-items: center;
+}
+
+
+header {
+    background-color: #fff !important;
+    border-bottom: 3px solid #424874 !important;
+    color: #000 !important;
+    padding: 8px !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    z-index: 1 !important;
+    justify-content: space-between !important;
+}
+
+header img {
+    width: 300px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+nav {
+    margin-left: 30px; !important;
+    cursor: pointer; !important;
+}
+
+nav span {
+    margin-right: 5px;
+}
+
+#login button {
+    margin: 15px; !important;
+}
+
+.w-btn, 
+.w-btn1 {
+    
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;d-flex justify-content-center
+    font-family: "EASTRAJET-Medium", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.25s;
+}
+
+.w-btn1{
+    color: black;
+    background-color: #DCD6F7;
+}
+
+.w-btn-indigo {
+    
+    background-color: rgba(255, 255, 255, .15);
+    border: 1px solid #337ab7;
+
+}
+
+.w-btn-indigo-outline {
+    border: 3px solid aliceblue;
+    color: #1e6b7b;
+}
+
+.w-btn-indigo-outline:hover {
+    color: #1e6b7b;
+    background: aliceblue;
+}
+
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn-outline:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn:active {
+    transform: scale(1.5);
+}
+
+.w-btn-outline:active {
+    transform: scale(1.5);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top : 95px;
+}
+
+.page-title {
+    font-family: 'neon';
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-title h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.main-list {
+    max-width: 80%;
+    width: 100%;
+}
+
+.write-form {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+#input-title {
+    margin-bottom: 20px;
+}
+
+#input-title label {
+    font-family: 'neon';
+    font-size: large;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#input-title input,
+#input-content textarea {
+    width: 95%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+    width: 100px;
+}
+
+textarea {
+    height: 300px;
+    resize: none; /* 크기 조정 비활성화 */
+    overflow: auto; /* 스크롤 나타내기 */
+}
+
+#filename {
+    font-size: 15px;
+    
+}
+
+#file-upload-button{
+	font-size : 30px;
+}
+
+.insert {
+    padding: 20px 30px;
+    display: block;
+    width: 600px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.insert .file-list .filebox p {
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.insert .file-list .filebox .delete i{
+    color: #ff5353;
+    margin-left: 5px;
+}

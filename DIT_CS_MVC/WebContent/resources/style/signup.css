@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'neon';
+    src: url('font/JalnanOTF.otf') format('opentype');
+}
+
+/* 전체 스타일 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    background-image: url("../images/backgroundfull.jpg");
+    background-size: cover;
+}
+
+#login-success {
+    display: flex;
+    align-items: center;
+}
+
+
+header {
+    background-color: #fff !important;
+    border-bottom: 3px solid #424874 !important;
+    color: #000 !important;
+    padding: 8px !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    z-index: 1000;
+}
+
+header img {
+    width: 300px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+nav {
+    margin-left: 30px; !important;
+    cursor: pointer; !important;
+}
+
+nav span {
+    margin-right: 5px;
+}
+
+#login button {
+    margin: 15px; !important;
+}
+
+.w-btn, 
+.w-btn1 {
+    
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;d-flex justify-content-center
+    font-family: "EASTRAJET-Medium", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.25s;
+}
+
+.w-btn1{
+    color: black;
+    background-color: #DCD6F7;
+}
+
+.w-btn-indigo {
+    
+    background-color: rgba(255, 255, 255, .15);
+    border: 1px solid #337ab7;
+
+}
+
+.w-btn-indigo-outline {
+    border: 3px solid aliceblue;
+    color: #1e6b7b;
+}
+
+.w-btn-indigo-outline:hover {
+    color: #1e6b7b;
+    background: aliceblue;
+}
+
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn-outline:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn:active {
+    transform: scale(1.5);
+}
+
+.w-btn-outline:active {
+    transform: scale(1.5);
+}
+
+.signup-container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.signup-container h2 {
+    margin-bottom: 30px;
+}
+
+.signup-container form input {
+    display: block;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-container form button {
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-container form button:hover {
+    background-color: #555;
+}
+
+.signup-container p {
+    margin-top: 25px;
+}
+
+.signup-container p a {
+    color: #333;
+}
+
+.signup-container p a:hover {
+    text-decoration: underline;
+}
+
+#id_chk{
+	display : flex;
+	    width: 102%;
+}
+
+#id_chk button{
+	display : flex;
+	margin: 0px;
+	width:20%;
+	padding:10px;
+	margin-bottom: 12px;
+	font-size : 12px;
+}

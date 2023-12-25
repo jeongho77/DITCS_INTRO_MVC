@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'neon';
+    src: url('font/JalnanOTF.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'EASTARJET-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 전체 스타일 */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+
+/* Header 스타일 */
+#login-success {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+header {
+    background-color: #fff !important;
+    border-bottom: 3px solid #424874 !important;
+    color: #000 !important;
+    height: 110px;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    z-index: 1 !important;
+}
+
+header img {
+    width: 300px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+nav {
+    margin-left: 30px; !important;
+    cursor: pointer; !important;
+}
+
+nav span {
+    margin-right: 5px;
+}
+
+#login button {
+    margin: 15px; !important;
+}
+
+.w-btn, 
+.w-btn1 {
+    
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: "EASTRAJET-Medium", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    transition: 0.25s;
+}
+
+.w-btn1{
+    color: black;
+    background-color: #DCD6F7;
+}
+
+.w-btn-indigo {
+    
+    background-color: rgba(255, 255, 255, .15);
+    border: 1px solid #337ab7;
+
+}
+
+.w-btn-indigo-outline {
+    border: 3px solid aliceblue;
+    color: #03e9f4;
+}
+
+.w-btn-indigo-outline:hover {
+    color: white;
+    background: aliceblue;
+}
+
+.w-btn:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn-outline:hover {
+    letter-spacing: 2px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.w-btn:active {
+    transform: scale(1.5);
+}
+
+.w-btn-outline:active {
+    transform: scale(1.5);
+}
+
+.postcontainer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.231),
+            rgba(0, 0, 0, 0.8)), url("images/background.jpg");
+    height: 600px;
+    background-color: white;
+    background-size: cover;
+    object-fit: contain;
+    text-align: center;
+    display: flex;
+   
+}
+
+.postcontainer > div:not(.dit) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.postcontainer div {
+   font-family: 'neon';
+    align-items: center;
+    font-size: 3em;
+    background-image: url(/resources/image/dddddd.png);
+    background-size: 107%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.postcontainer iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.postcontainer h4 {
+    color: black;
+    margin-top: 155px;
+    font-size : 40px;
+    background-color: #00ffff99;
+}
+
+
+.postcontainer h5 {
+    
+    background-color: #00ffff99;
+}
+
+/* Footer 스타일 */
+footer {
+    background-color: aqua;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+
+/* 스타일링을 위한 CSS 코드를 여기에 작성하세요 */
+.box-container {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+.dit {
+    width: 500px;
+    height: flex;
+    background-color: white;
+}
+
+
+
+.btn-jittery {
+    -webkit-animation: jittery 4s infinite;
+    animation: jittery 4s infinite;
+    height: 60px;
+    width: 120px;
+    background-color: aqua;
+    border-radius: 23px;
+    font-size: 20px;
+}
+
+@-webkit-keyframes jittery {
+    5%, 50% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    20% {
+        transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+        transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+        transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+        transform: scale(1.15) rotate(0);
+    }
+}
+
+@keyframes jittery {
+    5%, 50% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.9);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    20% {
+        transform: scale(1.15) rotate(-5deg);
+    }
+    25% {
+        transform: scale(1.15) rotate(5deg);
+    }
+    30% {
+        transform: scale(1.15) rotate(-3deg);
+    }
+    35% {
+        transform: scale(1.15) rotate(2deg);
+    }
+    40% {
+        transform: scale(1.15) rotate(0);
+    }
+}
+
+
+*로그인 회원가입버튼
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+a:hover{
+    background: red;
+    color: #050801;
+    box-shadow: 0 0 5px #9403f4,
+                0 0 25px #9403f4,
+                0 0 50px #9403f4,
+                0 0 200px#9403f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,red);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,red);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,red);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,red);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
